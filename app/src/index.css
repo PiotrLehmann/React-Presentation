@@ -1,6 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Quicksand:wght@300;400;700&display=swap");
+
 * {
+  font-family: "Poppins";
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  text-decoration: none;
+  z-index: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+}
+
+.app-container {
+  width: 100%;
+  background-color: floralwhite;
+}
+
+.content {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  height: 90vh;
+  font-size: 50px;
+  color: black;
+}
+
+nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #fffaf0;
+}
+
+.logo-container {
+  width: 10vw;
   text-align: center;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  font-size: 18px;
+}
+
+.progress-bar-container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 10vh;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90vw;
+  height: 20px;
+  padding: 5px;
+  background-color: #e2dfd9;
+  border-radius: 50px;
+}
+
+.bar-filling {
+  height: 100%;
+  background-color: #1d9cbb;
+  border-radius: 50px;
 }

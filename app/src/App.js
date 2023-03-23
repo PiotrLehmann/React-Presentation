@@ -1,22 +1,27 @@
-import "./App.css";
-import { Parallax } from "react-parallax";
-import Test from "./images/TestImage.png"
-import Wave from "./images/wavesOpacity.svg";
+import Navbar from "./Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <Parallax strength={600} bgImage={Test}>
-        <div className="background">
-          <div className="text-content"></div>
-          <img className="wave" src={Wave} />
-        </div>
-      </Parallax>
-      <Parallax strength={600}>
-        <div className="content">
-          <div className="text-content"></div>
-        </div>
-      </Parallax>
+    <div className="app-container">
+      <Navbar />
+      <section className="content" id="react-js">
+        React Js
+      </section>
+      <section className="content" id="intro">
+        Intro
+      </section>
+      <section className="content" id="components">
+        Components
+      </section>
+      <section className="content" id="hooks">
+        Hooks
+      </section>
+      <section className="content" id="environment">
+        Environment
+      </section>
+      <section className="content" id="summary">
+        Summary
+      </section>
     </div>
   );
 }
