@@ -16,6 +16,10 @@ a {
   color: inherit;
 }
 
+h1 {
+  font-weight: 700;
+}
+
 .app-container {
   width: 100%;
   background-color: floralwhite;
@@ -25,7 +29,7 @@ a {
   display: grid;
   place-items: center;
   align-content: center;
-  height: 90vh;
+  height: 100vh;
   font-size: 50px;
   color: black;
 }
@@ -76,4 +80,13 @@ nav {
   height: 100%;
   background-color: #1d9cbb;
   border-radius: 50px;
+}
+
+/* paragraphs */
+.text {
+  font-size: 25px;
+}
+
+#p1 {
+  width: 40vw;
 }

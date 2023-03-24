@@ -9,13 +9,13 @@ const Navbar = () => {
             <a href="#react-js">React Js</a>
           </li>
           <li>
-          <a href="#intro">Intro</a>
+            <a href="#intro">Intro</a>
           </li>
           <li>
-          <a href="#components">Components</a>
+            <a href="#components">Components</a>
           </li>
           <li>
-          <a href="#hooks">Hooks</a>
+            <a href="#hooks">Hooks</a>
           </li>
           <li>
             <a href="#environment">Environment</a>
@@ -26,7 +26,7 @@ const Navbar = () => {
         </ul>
       </nav>
       <ProgressBar />
-      </>
+    </>
   );
 };
 
