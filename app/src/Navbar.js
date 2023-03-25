@@ -1,28 +1,90 @@
 import ProgressBar from "./ProgressBar";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
+  const animationVariants = {
+    slidingAnchor: {
+      y: [-100, 15, 0],
+    },
+  };
+
   return (
     <>
       <nav>
         <ul className="nav-items">
-          <li>
+          <motion.li
+            whileHover={{
+              scale: 1.3,
+              color: "#1d9cbb",
+              transition: { duration: 0.2 },
+            }}
+            whileTap={{scale: 0.9}}
+            variants={animationVariants}
+            animate="slidingAnchor"
+            transition={{ delay: 0, duration: 0.35, ease: "easeOut" }}
+          >
             <a href="#react-js">React Js</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileHover={{
+              scale: 1.3,
+              color: "#1d9cbb",
+              transition: { duration: 0.1 },
+            }}
+            variants={animationVariants}
+            animate="slidingAnchor"
+            transition={{ delay: 0.1, duration: 0.35, ease: "easeOut" }}
+          >
             <a href="#intro">Intro</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileHover={{
+              scale: 1.3,
+              color: "#1d9cbb",
+              transition: { duration: 0.1 },
+            }}
+            variants={animationVariants}
+            animate="slidingAnchor"
+            transition={{ delay: 0.2, duration: 0.35, ease: "easeOut" }}
+          >
             <a href="#components">Components</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileHover={{
+              scale: 1.3,
+              color: "#1d9cbb",
+              transition: { duration: 0.1 },
+            }}
+            variants={animationVariants}
+            animate="slidingAnchor"
+            transition={{ delay: 0.3, duration: 0.35, ease: "easeOut" }}
+          >
             <a href="#hooks">Hooks</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileHover={{
+              scale: 1.3,
+              color: "#1d9cbb",
+              transition: { duration: 0.1 },
+            }}
+            variants={animationVariants}
+            animate="slidingAnchor"
+            transition={{ delay: 0.4, duration: 0.35, ease: "easeOut" }}
+          >
             <a href="#environment">Environment</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileHover={{
+              scale: 1.3,
+              color: "#1d9cbb",
+              transition: { duration: 0.1 },
+            }}
+            variants={animationVariants}
+            animate="slidingAnchor"
+            transition={{ delay: 0.5, duration: 0.35, ease: "easeOut" }}
+          >
             <a href="#summary">Summary</a>
-          </li>
+          </motion.li>
         </ul>
       </nav>
       <ProgressBar />

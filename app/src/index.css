@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  z-index: 0;
 }
 
 html {
@@ -53,12 +52,11 @@ nav {
   display: flex;
   width: 100vw;
   justify-content: space-evenly;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .progress-bar-container {
   display: flex;
-  width: 100vw;
   justify-content: center;
   align-items: center;
   position: sticky;
@@ -82,11 +80,49 @@ nav {
   border-radius: 50px;
 }
 
-/* paragraphs */
+/* paragraph 1 -> React JS */
+#react-js {
+  display: flex;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 50vw;
+  height: 100vh;
+  padding-left: 10vw;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 100vh;
+  padding-right: 10vw;
+}
+
+.title-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 2vh;
+}
+
+.title {
+  font-size: 50px;
+}
+
 .text {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 #p1 {
   width: 40vw;
+}
+
+#p1-logo {
+  height: 300px;
 }
