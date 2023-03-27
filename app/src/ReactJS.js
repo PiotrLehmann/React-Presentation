@@ -24,14 +24,15 @@ const Section1 = () => {
               initial={{ x: -1000, opacity: 0 }}
               animate={{ x: inView ? [-1000, 0] : null, opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="text"
+              className="text-box"
               id="p1"
             >
-              React js is a JavaScript library for building User Interfaces. It
+              React JS is a JavaScript library for building User Interfaces. It
               was developed at Facebook, Meta in 2013 and we can safely say, it
               has been one of the most infuential UI library of recent decade.
-              It is friendly for people, who already know basics of JS and it
-              really offers many tools to create responsive websites... fast!
+              It centers on the view layer of the application and is friendly
+              for people, who already know basics of JS and it really offers
+              many tools to create responsive websites... fast!
             </motion.p>
           </div>
           <div className="right-container">

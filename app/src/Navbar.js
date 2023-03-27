@@ -18,7 +18,7 @@ const Navbar = () => {
               color: "#1d9cbb",
               transition: { duration: 0.2 },
             }}
-            whileTap={{scale: 0.9}}
+            whileTap={{ color: "#000" }}
             variants={animationVariants}
             animate="slidingAnchor"
             transition={{ delay: 0, duration: 0.35, ease: "easeOut" }}
@@ -26,6 +26,7 @@ const Navbar = () => {
             <a href="#react-js">React Js</a>
           </motion.li>
           <motion.li
+            whileTap={{ color: "#000" }}
             whileHover={{
               scale: 1.3,
               color: "#1d9cbb",
@@ -38,6 +39,7 @@ const Navbar = () => {
             <a href="#intro">Intro</a>
           </motion.li>
           <motion.li
+            whileTap={{ color: "#000" }}
             whileHover={{
               scale: 1.3,
               color: "#1d9cbb",
@@ -50,6 +52,7 @@ const Navbar = () => {
             <a href="#components">Components</a>
           </motion.li>
           <motion.li
+            whileTap={{ color: "#000" }}
             whileHover={{
               scale: 1.3,
               color: "#1d9cbb",
@@ -62,6 +65,7 @@ const Navbar = () => {
             <a href="#hooks">Hooks</a>
           </motion.li>
           <motion.li
+            whileTap={{ color: "#000" }}
             whileHover={{
               scale: 1.3,
               color: "#1d9cbb",
@@ -74,6 +78,7 @@ const Navbar = () => {
             <a href="#environment">Environment</a>
           </motion.li>
           <motion.li
+            whileTap={{ color: "#000" }}
             whileHover={{
               scale: 1.3,
               color: "#1d9cbb",

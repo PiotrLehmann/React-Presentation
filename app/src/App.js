@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Section1 from "./Section1";
+import ReactJS from "./ReactJS";
+import Intro from "./Intro";
 import { useInView } from "react-intersection-observer";
 
 function App() {
@@ -10,10 +11,8 @@ function App() {
   return (
     <div className="app-container">
       <Navbar />
-      <Section1 />
-      <section className="content" id="intro">
-        Intro
-      </section>
+      <ReactJS />
+      <Intro />
       <section className="content" id="components">
         Components
       </section>
