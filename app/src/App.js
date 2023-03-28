@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import ReactJS from "./ReactJS";
 import Intro from "./Intro";
+import WhyReact from "./WhyReact.js"
 import { useInView } from "react-intersection-observer";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <ReactJS />
       <Intro />
+      <WhyReact />
       <section className="content" id="components">
         Components
       </section>

@@ -68,7 +68,7 @@ nav {
   align-items: center;
   justify-content: flex-start;
   width: 90vw;
-  height: 20px;
+  height: 10px;
   padding: 5px;
   background-color: #e2dfd9;
   border-radius: 50px;
@@ -133,7 +133,7 @@ nav {
   font-size: 22px;
   padding: 1rem;
   border-radius: 25px;
-  background: linear-gradient(30deg, rgb(45, 189, 196), #2170b9);
+  background: linear-gradient(90deg, rgb(45, 189, 196), #2170b9);
   margin-top: 2vh;
 }
 
@@ -148,6 +148,7 @@ nav {
 }
 
 .animation-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,7 +242,8 @@ body.active-modal {
   font-size: 18px;
 }
 
-.modal, .overlay {
+.modal,
+.overlay {
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -252,7 +254,7 @@ body.active-modal {
 }
 
 .overlay {
-  background: rgba(49,49,49,0.8);
+  background: rgba(49, 49, 49, 0.8);
 }
 .modal-content {
   position: absolute;
@@ -271,4 +273,82 @@ body.active-modal {
   top: -10px;
   right: -10px;
   padding: 5px 7px;
+}
+
+.modal-title {
+  position: absolute;
+  top: 10%;
+  font-weight: normal;
+}
+
+/* sectipn 3 -> Why React */
+.switch {
+  width: 8vw;
+  height: 4vw;
+  background-color: #e2dfd9;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  left: 50vw;
+  transform: translate(-50%);
+}
+
+.switch[data-isOn="true"] {
+  justify-content: flex-end;
+}
+
+.handle {
+  width: 4vw;
+  height: 4vw;
+  background: linear-gradient(45deg, rgb(14, 136, 24), #00ff0d);
+  border-radius: 50px;
+}
+
+.pros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    circle at bottom left,
+    rgba(0, 255, 25, 1) 20%,
+    floralwhite 62%
+  );
+  width: 50vw;
+  height: 100vh;
+}
+
+.pros-container,
+.cons-container {
+  margin-top: 10vh;
+  height: 70vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.pro-container {
+  background-color: rgb(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.pro {
+  font-size: 18px;
+}
+
+.cons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    circle at bottom right,
+    rgb(255, 0, 0) 15%,
+    floralwhite 62%
+  );
+  width: 50vw;
+  height: 100vh;
 }

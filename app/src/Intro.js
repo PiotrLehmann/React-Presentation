@@ -134,6 +134,7 @@ const Intro = () => {
               <div className="overlay" onClick={toggleModal}></div>
               <div className="modal-content">
                 <motion.div className="animation-container">
+                  <h2 className="modal-title">How it works with JS?</h2>
                   <div ref={ref} className="user">
                     <img src={require("./images/user.png")} alt="user" />
                   </div>
