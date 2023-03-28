@@ -40,6 +40,7 @@ nav {
   position: sticky;
   top: 0;
   background-color: #fffaf0;
+  z-index: 10;
 }
 
 .logo-container {
@@ -61,6 +62,7 @@ nav {
   align-items: center;
   position: sticky;
   top: 10vh;
+  z-index: 10;
 }
 
 .progress-bar {
@@ -294,6 +296,7 @@ body.active-modal {
   position: absolute;
   left: 50vw;
   transform: translate(-50%);
+  z-index: 2;
 }
 
 .switch[data-isOn="true"] {
@@ -311,6 +314,7 @@ body.active-modal {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
   background: radial-gradient(
     circle at bottom left,
     rgba(0, 255, 25, 1) 20%,
@@ -328,6 +332,8 @@ body.active-modal {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .pro-container {
@@ -344,6 +350,7 @@ body.active-modal {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
   background: radial-gradient(
     circle at bottom right,
     rgb(255, 0, 0) 15%,
