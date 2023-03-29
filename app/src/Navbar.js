@@ -62,7 +62,7 @@ const Navbar = () => {
             animate="slidingAnchor"
             transition={{ delay: 0.3, duration: 0.35, ease: "easeOut" }}
           >
-            <a href="#components">Components</a>
+            <a href="#JSX">JSX</a>
           </motion.li>
           <motion.li
             whileTap={{ color: "#000" }}
@@ -75,7 +75,7 @@ const Navbar = () => {
             animate="slidingAnchor"
             transition={{ delay: 0.4, duration: 0.35, ease: "easeOut" }}
           >
-            <a href="#hooks">Hooks</a>
+            <a href="#components">Components</a>
           </motion.li>
           <motion.li
             whileTap={{ color: "#000" }}
@@ -88,7 +88,7 @@ const Navbar = () => {
             animate="slidingAnchor"
             transition={{ delay: 0.5, duration: 0.35, ease: "easeOut" }}
           >
-            <a href="#environment">Environment</a>
+            <a href="#hooks">Hooks</a>
           </motion.li>
           <motion.li
             whileTap={{ color: "#000" }}
@@ -100,6 +100,19 @@ const Navbar = () => {
             variants={animationVariants}
             animate="slidingAnchor"
             transition={{ delay: 0.6, duration: 0.35, ease: "easeOut" }}
+          >
+            <a href="#environment">Environment</a>
+          </motion.li>
+          <motion.li
+            whileTap={{ color: "#000" }}
+            whileHover={{
+              scale: 1.3,
+              color: "#1d9cbb",
+              transition: { duration: 0.1 },
+            }}
+            variants={animationVariants}
+            animate="slidingAnchor"
+            transition={{ delay: 0.7, duration: 0.35, ease: "easeOut" }}
           >
             <a href="#summary">Summary</a>
           </motion.li>

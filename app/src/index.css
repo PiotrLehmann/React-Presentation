@@ -78,7 +78,7 @@ nav {
 
 .bar-filling {
   height: 100%;
-  background-color: rgb(45, 189, 196);
+  background: linear-gradient(45deg, rgb(55, 157, 149), #0ad3dd);
   border-radius: 50px;
 }
 
@@ -135,7 +135,7 @@ nav {
   font-size: 22px;
   padding: 1rem;
   border-radius: 25px;
-  background: linear-gradient(90deg, rgb(45, 189, 196), #2170b9);
+  background: linear-gradient(30deg, rgb(37, 124, 116), #0ad3dd);
   margin-top: 2vh;
 }
 
@@ -168,7 +168,7 @@ nav {
   background-size: contain;
   width: 20vh;
   height: 20vh;
-  background: linear-gradient(45deg, #2170b9, rgb(45, 189, 196));
+  background: linear-gradient(45deg, rgb(43, 120, 113), #0ad3dd);
   border-radius: 100px;
   margin-right: 1vw;
 }
@@ -196,7 +196,7 @@ nav {
   padding: 5px;
   font-size: 18px;
   font-weight: bold;
-  background-image: linear-gradient(90deg, rgb(45, 189, 196), #2170b9);
+  background: linear-gradient(45deg, rgb(37, 124, 116), #0ad3dd);
   border-radius: 10px;
 }
 
@@ -223,7 +223,7 @@ nav {
 .line-top {
   width: 200px;
   height: 10px;
-  background: linear-gradient(90deg, rgb(45, 189, 196), #2170b9);
+  background: linear-gradient(45deg, rgb(37, 124, 116), #0ad3dd);
 }
 
 .line-bottom {
@@ -360,4 +360,57 @@ body.active-modal {
   );
   width: 50vw;
   height: 100vh;
+}
+
+/* section 4 -> JSX */
+
+#JSX {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.examples-container {
+  position: relative;
+  width: 80vw;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2vw;
+  margin-top: 10vh;
+}
+
+.other {
+  background-color: #e2dfd9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding: 2vh;
+}
+
+.other.hidden {
+  background-color: floralwhite;
+}
+
+.quick-intro {
+  background: linear-gradient(45deg, rgb(37, 124, 116), #0ad3dd);
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 39vw;
+  height: 34vh;
+  border-radius: 30px;
+}
+
+.text-container {
+  width: 60vw;
+  height: 50vh;
 }
