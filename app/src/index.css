@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Quicksand:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
 
 * {
   font-family: "Poppins";
@@ -301,7 +302,7 @@ body.active-modal {
   z-index: 2;
 }
 
-.switch[data-isOn="true"] {
+.switch[data-ison="true"] {
   justify-content: flex-end;
 }
 
@@ -385,10 +386,18 @@ body.active-modal {
 .other {
   background-color: #e2dfd9;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 2vh;
   border-radius: 30px;
   padding: 2vh;
+  font-size: 18px;
+}
+
+.other-title {
+  align-self:  center;
+  font-size: 30px;
+  margin-top: 2vh;
 }
 
 .other.hidden {
@@ -397,7 +406,6 @@ body.active-modal {
 
 .quick-intro {
   background: linear-gradient(45deg, rgb(37, 124, 116), #0ad3dd);
-  font-size: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -413,4 +421,15 @@ body.active-modal {
 .text-container {
   width: 60vw;
   height: 50vh;
+  font-size: 22px;
+}
+
+.quick-intro .title {
+  margin-top: 17vh;
+}
+
+.code-like {
+  font-family: 'Fira Mono', monospace;
+  margin-top: 3vh;
+  align-self: center;
 }

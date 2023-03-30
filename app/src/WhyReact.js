@@ -51,7 +51,7 @@ const WhyReact = () => {
               <OneLiner content="Extensive collection of UI resusable components" />
             </div>
           </motion.div>
-          <div className="switch" data-isOn={isOn} onClick={toggleSwitch}>
+          <div className="switch" data-ison={isOn} onClick={toggleSwitch}>
             <motion.div
               ref={ref}
               className="handle"

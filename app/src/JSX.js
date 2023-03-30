@@ -3,14 +3,29 @@ import { useState } from "react";
 
 const JSX = () => {
   const [isHovered, setIsHovered] = useState(false);
+
   function handleMouseEnter() {
-    setIsHovered(!isHovered);
-    console.log(isHovered);
+    setIsHovered(true);
   }
 
   function handleMouseLeave() {
-    setIsHovered(!isHovered);
-    console.log(isHovered);
+    setIsHovered(false);
+  }
+
+  const topRightContents = [
+    "const one = <h1>Hello World<h1>;",
+    'var newh1 = document.createElement("h1") \n' +
+      'newh1.innerHTML = "this is new html element"',
+  ];
+
+  const [topRightContent, setTopRightContent] = useState(topRightContents[0]);
+
+  function changeTopRightContent() {
+    if (topRightContent === topRightContents[0]) {
+      setTopRightContent(topRightContents[1]);
+    } else {
+      setTopRightContent(topRightContents[0]);
+    }
   }
 
   const introWhileHover = {
@@ -25,8 +40,8 @@ const JSX = () => {
   };
   const spring = {
     type: "spring",
-    stiffness: 700,
-    damping: 10,
+    stiffness: 400,
+    damping: 20,
   };
 
   return (
@@ -42,7 +57,8 @@ const JSX = () => {
           <p className="title">What is JSX?</p>
           <motion.div
             className="text-container"
-            animate={isHovered ? "textPop" : "textHide"}
+            initial={textHide}
+            animate={isHovered ? textPop : textHide}
           >
             <p>
               JSX is short for JavaScript XML. JSX is an expression which uses
@@ -54,8 +70,18 @@ const JSX = () => {
           </motion.div>
         </motion.div>
         <div className="other hidden"></div>
-        <div className="other"></div>
-        <div className="other"></div>
+        <div className="other" onClick={changeTopRightContent}>
+          <p className="other-title">Single-line expressions</p>
+          <p className="code-like">{topRightContent}</p>
+        </div>
+        <div className="other">
+          <p className="other-title">Combining JS with HTML tags</p>
+          <p className="code-like">
+            {'const who = "Someone"'}
+            {"\n"}
+            {"const greet = <h1>Hello {who}!</h1>;"}
+          </p>
+        </div>
         <div className="other"></div>
       </div>
     </section>
