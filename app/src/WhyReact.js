@@ -26,11 +26,11 @@ const WhyReact = () => {
   };
 
   const changeForRed = {
-    background: "linear-gradient(45deg, rgb(109, 23, 23), red)",
+    background: "linear-gradient(45deg, rgb(54, 64, 64), rgb(8, 101, 101))",
   };
 
   const changeForGreen = {
-    background: "linear-gradient(45deg,rgb(14, 136, 24), #00ff0d)",
+    background: "linear-gradient(45deg,rgb(18, 104, 104), #00f2ff)",
   };
 
   return (
