@@ -15,14 +15,28 @@ const WhyReact = () => {
     damping: 20,
   };
 
-  const hide = {
+  const hideRight = {
     scale: 0,
     opacity: 0,
+    x: [0, 800],
   };
 
-  const pop = {
+  const hideLeft = {
+    scale: 0,
+    opacity: 0,
+    x: [0, -800],
+  };
+
+  const popLeft = {
     scale: 1,
     opacity: 1,
+    x: [800, 0],
+  };
+
+  const popRight = {
+    scale: 1,
+    opacity: 1,
+    x: [-800, 0],
   };
 
   const changeForRed = {
@@ -39,7 +53,7 @@ const WhyReact = () => {
         <section className="content" id="why-react">
           <motion.div
             className="pros"
-            animate={!isOn ? pop : hide}
+            animate={!isOn && inView ? popLeft : hideRight}
             transition={spring}
           >
             <div className="pros-container">
@@ -51,7 +65,12 @@ const WhyReact = () => {
               <OneLiner content="Extensive collection of UI resusable components" />
             </div>
           </motion.div>
-          <div className="switch" data-ison={isOn} onClick={toggleSwitch}>
+          <div
+            ref={ref}
+            className="switch"
+            data-ison={isOn}
+            onClick={toggleSwitch}
+          >
             <motion.div
               className="handle"
               layout
@@ -61,7 +80,7 @@ const WhyReact = () => {
           </div>
           <motion.div
             className="cons"
-            animate={isOn ? pop : hide}
+            animate={isOn && inView ? popRight : hideLeft}
             transition={spring}
           >
             <div className="cons-container">

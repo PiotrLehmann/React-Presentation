@@ -9,7 +9,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: none;
   user-select: none;
   overflow-x: hidden;
   overflow-y: hidden;
