@@ -9,7 +9,8 @@
 }
 
 html {
-  scroll-behavior: none;
+  scroll-behavior: smooth;
+  scroll-snap-align: mandatory;
   user-select: none;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -321,11 +322,7 @@ body.active-modal {
   display: flex;
   justify-content: center;
   align-items: center;
-  background:radial-gradient(
-    ellipse at left,
-    #14ccc3 30%,
-    transparent 52%
-  );
+  background: radial-gradient(ellipse at left, #14ccc3 30%, transparent 52%);
   width: 50vw;
   height: 100vh;
 }
@@ -356,11 +353,7 @@ body.active-modal {
   display: flex;
   justify-content: center;
   align-items: center;
-  background:radial-gradient(
-    ellipse at right,
-    #b7b9b9 30%,
-    transparent 52%
-  );
+  background: radial-gradient(ellipse at right, #b7b9b9 30%, transparent 52%);
   width: 50vw;
   height: 100vh;
 }
@@ -424,7 +417,7 @@ body.active-modal {
   width: 39vw;
   height: 33vh;
   border-radius: 30px;
-  z-index: 10;
+  z-index: 8;
 }
 
 .text-container {
