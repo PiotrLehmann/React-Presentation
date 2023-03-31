@@ -11,6 +11,8 @@
 html {
   scroll-behavior: smooth;
   user-select: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 a {
@@ -319,11 +321,10 @@ body.active-modal {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
-  background: radial-gradient(
-    circle at bottom left,
-    #0ad3dd 20%,
-    floralwhite 62%
+  background:radial-gradient(
+    ellipse at left,
+    #14ccc3 30%,
+    transparent 52%
   );
   width: 50vw;
   height: 100vh;
@@ -355,11 +356,10 @@ body.active-modal {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
-  background: radial-gradient(
-    circle at bottom right,
-    rgb(8, 101, 101) 20%,
-    floralwhite 62%
+  background:radial-gradient(
+    ellipse at right,
+    #b7b9b9 30%,
+    transparent 52%
   );
   width: 50vw;
   height: 100vh;

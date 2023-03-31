@@ -26,11 +26,11 @@ const WhyReact = () => {
   };
 
   const changeForRed = {
-    background: "linear-gradient(45deg, rgb(54, 64, 64), rgb(8, 101, 101))",
+    background: "linear-gradient(45deg, #b7b9b9, transparent)",
   };
 
   const changeForGreen = {
-    background: "linear-gradient(45deg,rgb(18, 104, 104), #00f2ff)",
+    background: "linear-gradient(45deg, #14ccc3,transparent)",
   };
 
   return (
@@ -53,7 +53,6 @@ const WhyReact = () => {
           </motion.div>
           <div className="switch" data-ison={isOn} onClick={toggleSwitch}>
             <motion.div
-              ref={ref}
               className="handle"
               layout
               transition={spring}

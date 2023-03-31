@@ -109,7 +109,7 @@ const JSX = () => {
               className="other right-top"
               onClick={changeTopRightContent}
               animate={inView ? slideFromRight : doNothing}
-              transition={{delay: 0.1}}
+              transition={{ delay: 0.1 }}
             >
               <p className="other-title">Single-line expressions</p>
               <p className="code-like">{topRightContent}</p>
@@ -117,7 +117,7 @@ const JSX = () => {
             <motion.div
               className="other"
               animate={inView ? slideFromRight : doNothing}
-              transition={{delay: 0.3}}
+              transition={{ delay: 0.3 }}
             >
               <p className="other-title">Combining JS with HTML tags</p>
               <div className="code-like">
@@ -131,7 +131,7 @@ const JSX = () => {
               className="other right-bottom"
               onClick={changeBotRightContent}
               animate={inView ? slideFromRight : doNothing}
-              transition={{delay: 0.5}}
+              transition={{ delay: 0.5 }}
             >
               <p className="other-title">Only single parent tag is allowed</p>
               <div className="code-like right-bottom">
