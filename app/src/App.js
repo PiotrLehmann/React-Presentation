@@ -4,6 +4,7 @@ import ReactJS from "./ReactJS";
 import Intro from "./Intro";
 import WhyReact from "./WhyReact.js"
 import JSX from "./JSX.js"
+import Components from "./Components";
 import { useInView } from "react-intersection-observer";
 
 function App() {
@@ -17,9 +18,7 @@ function App() {
       <Intro />
       <WhyReact />
       <JSX />
-      <section className="content" id="components">
-        Components
-      </section>
+      <Components />
       <section className="content" id="hooks">
         Hooks
       </section>

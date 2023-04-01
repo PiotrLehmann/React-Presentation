@@ -445,3 +445,31 @@ body.active-modal {
 .code-like.right-bottom {
   justify-self: center;
 }
+
+/* section -> Components */
+.panel-container {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-panel {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: #e2dfd9;
+  width: 30vw;
+  height: 70vh;
+  margin-top: 10vh;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+.cards-container {
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
