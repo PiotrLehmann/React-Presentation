@@ -477,6 +477,7 @@ body.active-modal {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  justify-items: center;
   text-align: center;
   background-color: #e2dfd9;
   padding: 2vh;
@@ -556,4 +557,17 @@ input {
   border-radius: 1.5vh;
   background: linear-gradient(45deg, rgb(37, 124, 116), #0ad3dd);
   font-size: 4vh;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  height: 40vh;
+  width: 13vw;
+  border-radius: 3vh;
+}
+
+.card-background {
+  border-top-left-radius: 3vh;
+  border-top-right-radius: 3vh;
 }

@@ -1,4 +1,5 @@
 import Slider from "./Silder";
+import Card from "./Card";
 import { useState } from "react";
 
 const Components = () => {
@@ -7,6 +8,7 @@ const Components = () => {
 
   const handleTitleValueChange = (event) => {
     setTitleValue(event.target.value);
+    console.log(titleValue);
   };
 
   // for font size
@@ -44,7 +46,28 @@ const Components = () => {
     "rgb(" + textColorValue + "," + textColorValue + "," + textColorValue + ")";
 
   // for cards
-  const [cards, setCards] = useState(["Card1", "Card2", "Card3"]);
+  const [cards, setCards] = useState([]);
+
+  var key = 1;
+
+  const handleAddCard = () => {
+    const newTextValue = textValue;
+    const newTitle = titleValue;
+    const newBackgroundColor = backgroundColor;
+    const newTexColor = textColor;
+    setCards([
+      ...cards,
+      {
+        key: key,
+        fontSize: newTextValue,
+        title: newTitle,
+        background: newBackgroundColor,
+        color: newTexColor,
+      },
+    ]);
+    console.log(key);
+    key = key + 1;
+  };
 
   return (
     <section className="content" id="components">
@@ -52,11 +75,13 @@ const Components = () => {
         <div className="control-panel">
           <div className="title-wraper">
             <p className="title">Create Component</p>
-            <button className="create-card-btn">+</button>
+            <button className="create-card-btn" onClick={handleAddCard}>
+              +
+            </button>
           </div>
           <div className="card-title-input">
             <p className="description">Title</p>
-            <input type="text" />
+            <input type="text" onChange={handleTitleValueChange} />
           </div>
           <div className="card-text-size-input">
             <p className="description">Text size:</p>
@@ -105,8 +130,14 @@ const Components = () => {
         </div>
       </div>
       <div className="cards-container">
-        {cards.map((card) => (
-          <div>{}</div>
+        {cards?.map((card) => (
+          <Card
+            key={card.key}
+            title={card.title}
+            fontSize={card.fontSize}
+            backgroundColor={card.background}
+            textColor={card.color}
+          />
         ))}
       </div>
     </section>
