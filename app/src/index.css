@@ -456,20 +456,104 @@ body.active-modal {
 
 .control-panel {
   display: grid;
+  position: relative;
   align-items: center;
   justify-content: center;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   background-color: #e2dfd9;
   width: 30vw;
-  height: 70vh;
+  height: 50vh;
   margin-top: 10vh;
-  border-radius: 30px;
+  border-radius: 3vh;
   font-size: 15px;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .cards-container {
-  width: 60vw;
+  width: 50vw;
+  height: 50vh;
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  background-color: #e2dfd9;
+  padding: 2vh;
+  border-radius: 3vh;
+}
+
+.title-wraper {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 3vh;
+}
+
+.control-panel .title {
+  font-size: 4vh;
+  margin: 0;
+  text-align: center;
+}
+
+.card-title-input,
+.card-background-color-input,
+.card-text-color-input,
+.card-text-size-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  align-self: flex-start;
+}
+
+.card-title-input input {
+  margin-top: 0.8vh;
+  height: 3vh;
+  border-radius: 1.5vh;
+  border: none;
+  text-align: center;
+}
+
+.card-title-input input:hover {
+  box-shadow: 0px 0px 5px rgb(153, 153, 153);
+}
+
+input {
+  display: flex;
+  width: 18vw;
+  cursor: pointer;
+}
+
+.slider-wraper {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+
+.color-mark1,
+.color-mark2 {
+  height: 4vh;
+  width: 4vh;
+  background-color: grey;
+  border-radius: 25%;
+  border: solid 5px rgb(195, 193, 193);
+}
+
+.text-value {
+  width: 4vh;
+  text-align: center;
+}
+
+.create-card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5vh;
+  height: 5vh;
+  border: none;
+  border-radius: 1.5vh;
+  background: linear-gradient(45deg, rgb(37, 124, 116), #0ad3dd);
+  font-size: 4vh;
 }

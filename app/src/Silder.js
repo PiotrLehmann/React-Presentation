@@ -4,6 +4,9 @@ const Slider = (props) => {
         type="range"
         defaultValue={props.value}
         onChange={props.handleChange}
+        min={props.min}
+        max={props.max}
+        step={props.step}
       />
   );
 };
