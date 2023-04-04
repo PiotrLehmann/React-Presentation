@@ -551,12 +551,14 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 5vh;
-  height: 5vh;
+  width: 7vh;
+  height: 7vh;
   border: none;
   border-radius: 1.5vh;
-  background: linear-gradient(45deg, rgb(37, 124, 116), #0ad3dd);
+  background: #216efd;
   font-size: 4vh;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
 }
 
 .card {
@@ -567,7 +569,18 @@ input {
   border-radius: 3vh;
 }
 
+.card > p {
+  align-self: center;
+  justify-content: center;
+}
+
 .card-background {
   border-top-left-radius: 3vh;
   border-top-right-radius: 3vh;
+}
+
+.viewer {
+  width: 1px;
+  height: 1px;
+  background-color: floralwhite;
 }
