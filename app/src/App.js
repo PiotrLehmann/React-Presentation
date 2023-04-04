@@ -1,3 +1,4 @@
+import Start from "./Start";
 import React from "react";
 import Navbar from "./Navbar";
 import ReactJS from "./ReactJS";
@@ -5,14 +6,12 @@ import Intro from "./Intro";
 import WhyReact from "./WhyReact.js"
 import JSX from "./JSX.js"
 import Components from "./Components";
-import { useInView } from "react-intersection-observer";
 
 function App() {
-  // Hook which checks visibility of the section
-  const { ref: ref, inView: sectionIsVisible } = useInView();
 
   return (
     <div className="app-container">
+      <Start />
       <Navbar />
       <ReactJS />
       <Intro />

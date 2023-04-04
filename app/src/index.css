@@ -87,6 +87,73 @@ nav {
   border-radius: 50px;
 }
 
+/* start panel */
+.start-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 20;
+  background-color: floralwhite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #0ad3dd;
+  }
+}
+
+.typewriter p {
+  overflow: hidden;
+  border-right: 0.15em solid #0ad3dd;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 2.8s steps(14, end), blink-caret 1s step-end infinite;
+}
+
+.typewriter .by {
+  opacity: 0;
+  width: max-content;
+  font-style: italic;
+  overflow: hidden;
+  border-right: 0.15em solid #0ad3dd;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.02em;
+  animation: typing 4s steps(34, end), blink-caret 1s step-end infinite;
+  animation-delay: 2.8s;
+  animation-fill-mode: forwards;
+}
+
+.get-started-btn {
+  position: absolute;
+  width: 20vw;
+  height: 10vh;
+  bottom: 25vh;
+  font-size: 3vh;
+  border: none;
+  border-radius: 2vh;
+  background: linear-gradient(10deg, rgb(55, 157, 149), #0ad3dd);
+}
+
 /* section 1 -> React JS */
 #react-js {
   display: flex;
