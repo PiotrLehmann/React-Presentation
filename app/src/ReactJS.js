@@ -9,8 +9,9 @@ const Section1 = () => {
     <InView onChange={setInView}>
       {({ inView, ref }) => (
         <section className="content" id="react-js">
+          <div ref={ref} className="viewer"></div>
           <div className="left-container">
-            <div ref={ref} className="title-container">
+            <div className="title-container">
               <motion.p
                 initial={{ x: -800, opacity: 0 }}
                 className="title"

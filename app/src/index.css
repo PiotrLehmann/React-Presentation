@@ -356,6 +356,7 @@ body.active-modal {
   position: absolute;
   top: 10%;
   font-weight: normal;
+  font-size: 6vh;
 }
 
 /* sectipn 3 -> Why React */
@@ -647,6 +648,15 @@ input {
 }
 
 .viewer {
+  width: 1px;
+  height: 1px;
+  background-color: floralwhite;
+  position: absolute;
+  top: 30vh;
+  left: 30vh;
+}
+
+.components-viewer {
   width: 1px;
   height: 1px;
   background-color: floralwhite;

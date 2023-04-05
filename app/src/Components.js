@@ -89,7 +89,7 @@ const Components = () => {
   };
   const pop = {
     opacity: [0, 1],
-    scale: inView ? [0, 1] : null,
+    scale: [0, 1],
   };
   const spring = {
     type: "spring",
@@ -119,7 +119,7 @@ const Components = () => {
                   id="text-input"
                   type="text"
                   onChange={handleTitleValueChange}
-                  maxlength="4"
+                  maxLength="4"
                   ref={clearRef}
                 />
               </div>
@@ -169,7 +169,7 @@ const Components = () => {
               </div>
             </motion.div>
           </div>
-          <div className="viewer" ref={ref}></div>
+          <div ref={ref} className="components-viewer"></div>
           <motion.div
             animate={slideFromRight}
             transition={spring}

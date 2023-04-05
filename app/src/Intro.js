@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { InView } from "react-intersection-observer";
 
@@ -129,49 +129,56 @@ const Intro = () => {
               </motion.div>
             </div>
           </section>
-          {modal && (
-            <div className="modal">
-              <div className="overlay" onClick={toggleModal}></div>
-              <div className="modal-content">
-                <motion.div className="animation-container">
-                  <h2 className="modal-title">How it works with JS?</h2>
-                  <div ref={ref} className="user">
-                    <img src={require("./images/user.png")} alt="user" />
-                  </div>
-                  <div className="line-container">
-                    <motion.p
-                      className="request"
-                      variants={animationVariants}
-                      animate="requestAnimation"
-                    >
-                      request
-                    </motion.p>
-                    <motion.div
-                      className="line-top"
-                      variants={animationVariants}
-                      animate="slideFromRight"
-                      transition={{ delay: 0.3 }}
-                    ></motion.div>
-                    <motion.div
-                      className="line-bottom"
-                      variants={animationVariants}
-                      animate="slideFromRight"
-                      transition={{ delay: 0.4 }}
-                    ></motion.div>
-                    <motion.p className="no-response">NO response</motion.p>
-                  </div>
+          <AnimatePresence>
+            {modal && (
+              <div className="modal">
+                <div className="overlay" onClick={toggleModal}></div>
+                <motion.div className="modal-content">
                   <motion.div
-                    className="server"
-                    variants={animationVariants}
-                    animate="slideFromRight"
-                    transition={{ delay: 0.6 }}
+                    className="animation-container"
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0 }}
                   >
-                    <img src={require("./images/server.png")} alt="server" />
+                    <h2 className="modal-title">How it works with JS?</h2>
+                    <div className="user">
+                      <img src={require("./images/user.png")} alt="user" />
+                    </div>
+                    <div className="line-container">
+                      <motion.p
+                        className="request"
+                        variants={animationVariants}
+                        animate="requestAnimation"
+                      >
+                        request
+                      </motion.p>
+                      <motion.div
+                        className="line-top"
+                        variants={animationVariants}
+                        animate="slideFromRight"
+                        transition={{ delay: 0.3 }}
+                      ></motion.div>
+                      <motion.div
+                        className="line-bottom"
+                        variants={animationVariants}
+                        animate="slideFromRight"
+                        transition={{ delay: 0.4 }}
+                      ></motion.div>
+                      <motion.p className="no-response">NO response</motion.p>
+                    </div>
+                    <motion.div
+                      className="server"
+                      variants={animationVariants}
+                      animate="slideFromRight"
+                      transition={{ delay: 0.6 }}
+                    >
+                      <img src={require("./images/server.png")} alt="server" />
+                    </motion.div>
                   </motion.div>
                 </motion.div>
               </div>
-            </div>
-          )}
+            )}
+          </AnimatePresence>
         </>
       )}
     </InView>

@@ -1,4 +1,4 @@
-import { delay, motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { InView } from "react-intersection-observer";
 import { useState } from "react";
 
@@ -6,7 +6,7 @@ const Start = () => {
   const [inView, setInView] = useState(false);
 
   const pop = {
-    scale: inView ? [0, 1] : null,
+    scale:  [0, 1],
     opacity: [0, 1],
   };
   const spring = {
@@ -22,9 +22,16 @@ const Start = () => {
   };
 
   return (
-    <>
+    <AnimatePresence>
       {modal && (
-        <div className="start-container">
+        <motion.div
+          className="start-container"
+          ininital={{ opacity: 1 }}
+          transition={{
+            duration: 0.5,
+          }}
+          exit={{ y: -1000, scale: 0, zIndex: -1 }}
+        >
           <div className="typewriter">
             <p className="title">WHAT IS REACT?</p>
           </div>
@@ -45,9 +52,9 @@ const Start = () => {
           >
             GET STARTED
           </motion.button>
-        </div>
+        </motion.div>
       )}
-    </>
+    </AnimatePresence>
   );
 };
 
