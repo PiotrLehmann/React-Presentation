@@ -6,7 +6,7 @@ const Start = () => {
   const [inView, setInView] = useState(false);
 
   const pop = {
-    scale:  [0, 1],
+    scale: [0, 1],
     opacity: [0, 1],
   };
   const spring = {
@@ -30,7 +30,7 @@ const Start = () => {
           transition={{
             duration: 0.5,
           }}
-          exit={{ y: -1000, scale: 0, zIndex: -1 }}
+          exit={{ y: -1000, scale: 0 }}
         >
           <div className="typewriter">
             <p className="title">WHAT IS REACT?</p>
