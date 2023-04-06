@@ -31,8 +31,8 @@ h1 {
 
 .content {
   display: flex;
-  place-items: center;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   font-size: 50px;
   color: black;
@@ -660,4 +660,83 @@ input {
   width: 1px;
   height: 1px;
   background-color: floralwhite;
+}
+
+/* section -> Hooks */
+.content#hooks {
+  flex-direction: column;
+}
+
+#hooks .text-box.main {
+  width: 60vw;
+}
+
+.description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+  width: 100vw;
+}
+
+.hooks-container {
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  justify-content: space-around;
+}
+
+.hook-container {
+  position: relative;
+}
+
+.hook-container img {
+  width: 40vh;
+  margin-top: 8vh;
+}
+
+.hook-name {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5vh;
+}
+
+#hooks .viewer {
+  position: static;
+}
+
+.example-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+.example-container .text-box {
+  width: 40vw;
+}
+
+.hook-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vh;
+}
+
+.hook-description .title {
+  margin-bottom: 0;
+}
+
+.example {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
 }
