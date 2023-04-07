@@ -767,7 +767,8 @@ input {
   border-radius: 2vh;
 }
 
-.decrement, .increment {
+.decrement,
+.increment {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -776,7 +777,53 @@ input {
   border: none;
 }
 
-.minus, .plus {
+.minus,
+.plus {
   width: 4vh;
 }
 
+/* last section -> environement */
+.content#environment {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.bottom-container {
+  display: flex;
+  height: 50vh;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+
+.bottom-container .text-box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10vh;
+}
+
+.text-box-container .text-box {
+  width: 25vw;
+  font-size: 2vh;
+}
+
+.top-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+.bouncy-ball {
+  background: black;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+}
+
+#environment .viewer {
+  position: static;
+}

@@ -7,6 +7,7 @@ import WhyReact from "./WhyReact.js"
 import JSX from "./JSX.js"
 import Hooks from "./Hooks";
 import Components from "./Components";
+import Environment from "./Environment";
 
 function App() {
 
@@ -20,9 +21,7 @@ function App() {
       <JSX />
       <Components />
       <Hooks />
-      <section className="content" id="environment">
-        Environment
-      </section>
+      <Environment />
       <section className="content" id="summary">
         Summary
       </section>
