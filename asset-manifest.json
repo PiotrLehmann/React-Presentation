@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-presentation/static/css/main.7768e234.css",
-    "main.js": "/react-presentation/static/js/main.c5013bc9.js",
-    "static/media/hook.png": "/react-presentation/static/media/hook.94974661b751fe3fd1f3.png",
-    "static/media/React.webp": "/react-presentation/static/media/React.2a0cac33f155e4a27216.webp",
-    "index.html": "/react-presentation/index.html",
-    "main.7768e234.css.map": "/react-presentation/static/css/main.7768e234.css.map",
-    "main.c5013bc9.js.map": "/react-presentation/static/js/main.c5013bc9.js.map"
+    "main.css": "/app/static/css/main.7768e234.css",
+    "main.js": "/app/static/js/main.1adaa841.js",
+    "static/media/hook.png": "/app/static/media/hook.94974661b751fe3fd1f3.png",
+    "static/media/React.webp": "/app/static/media/React.2a0cac33f155e4a27216.webp",
+    "index.html": "/app/index.html",
+    "main.7768e234.css.map": "/app/static/css/main.7768e234.css.map",
+    "main.1adaa841.js.map": "/app/static/js/main.1adaa841.js.map"
   },
   "entrypoints": [
     "static/css/main.7768e234.css",
-    "static/js/main.c5013bc9.js"
+    "static/js/main.1adaa841.js"
   ]
 }
