@@ -114,7 +114,7 @@ const Navbar = () => {
             animate="slidingAnchor"
             transition={{ delay: 0.7, duration: 0.35, ease: "easeOut" }}
           >
-            <a href="#summary">Summary</a>
+            <a href="#end">End</a>
           </motion.li>
         </ul>
       </nav>

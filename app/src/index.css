@@ -100,6 +100,10 @@ nav {
   background-color: floralwhite;
 }
 
+#react-js .viewer {
+  position: static;
+}
+
 @keyframes typing {
   from {
     width: 0;
@@ -196,6 +200,16 @@ nav {
 
 #p1-logo {
   height: 300px;
+  animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* section 2 -> Intro */
@@ -825,5 +839,23 @@ input {
 }
 
 #environment .viewer {
+  position: static;
+}
+
+/* section end */
+
+.content#end {
+  flex-direction: column;
+}
+
+.last-anchor {
+  font-size: 3vh;
+  background: linear-gradient(45deg, rgb(55, 157, 149), #0ad3dd);
+  padding: 2vh;
+  margin-top: 5vh;
+  border-radius: 2vh;
+}
+
+#end .viewer {
   position: static;
 }

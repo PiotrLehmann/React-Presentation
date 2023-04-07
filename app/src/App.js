@@ -8,6 +8,7 @@ import JSX from "./JSX.js"
 import Hooks from "./Hooks";
 import Components from "./Components";
 import Environment from "./Environment";
+import End from "./End";
 
 function App() {
 
@@ -22,9 +23,7 @@ function App() {
       <Components />
       <Hooks />
       <Environment />
-      <section className="content" id="summary">
-        Summary
-      </section>
+      <End />
     </div>
   );
 }
