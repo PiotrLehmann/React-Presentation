@@ -704,6 +704,10 @@ input {
   font-size: 2.5vh;
 }
 
+.main {
+  font-size: 2.5vh;
+}
+
 #hooks .viewer {
   position: static;
 }
@@ -733,10 +737,46 @@ input {
   margin-bottom: 0;
 }
 
+.hook-description .text-box {
+  font-size: 2vh;
+}
+
 .example {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 50vw;
   height: 50vh;
 }
+
+.counter-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vh;
+  width: 30vw;
+  height: 20vh;
+  background-color: #e2dfd9;
+  border-radius: 4vh;
+}
+
+.count {
+  text-align: center;
+  width: 10vw;
+  border-radius: 2vh;
+}
+
+.decrement, .increment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vh;
+  border-radius: 2vh;
+  border: none;
+}
+
+.minus, .plus {
+  width: 4vh;
+}
+
