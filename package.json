@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "react-parallax": "^3.5.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
