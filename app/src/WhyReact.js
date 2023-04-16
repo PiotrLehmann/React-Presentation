@@ -62,7 +62,7 @@ const WhyReact = () => {
               <OneLiner content="Less coding" />
               <OneLiner content="UI renders faster due tu Virtual DOM" />
               <OneLiner content="Massive open-source environment" />
-              <OneLiner content="Extensive collection of UI resusable components" />
+              <OneLiner content="Extensive collection of UI reusable components" />
             </div>
           </motion.div>
           <div

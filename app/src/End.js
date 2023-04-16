@@ -48,7 +48,7 @@ const End = () => {
                   exit={hide}
                   transition={spring}
                   className="last-anchor"
-                  href="#"
+                  href="https://github.com/PiotrLehmann/React-Presentation"
                 >
                   GitHub Repository of this webiste
                 </motion.a>

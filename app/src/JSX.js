@@ -119,7 +119,7 @@ const JSX = () => {
               animate={inView ? slideFromRight : doNothing}
               transition={{ delay: 0.3 }}
             >
-              <p className="other-title">Combining JS with HTML tags</p>
+              <p className="other-title">Combine JS with "HTML tags"</p>
               <div className="code-like">
                 <p className="code-like">{'const who = "Someone";'}</p>
                 <p className="code-like">
